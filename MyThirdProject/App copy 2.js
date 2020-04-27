@@ -1,16 +1,21 @@
-import React from 'react';
-import {Text, Image, View } from 'react-native';
+import React from "react";
+import { Text, Image, View } from "react-native";
 
-export default function myDog() {
- 
+export default function CatApp() {
+
+  let pic = {
+    uri: "https://raw.githubusercontent.com/AbdunabiRamadan/CIS340/master/images/dog2.png"};
+
   return (
-    <View>
-      <Image source="https://github.com/AbdunabiRamadan/CIS340/blob/master/images/dog2.png"
-      style ={{width: 200, height: 200 }}
-    />
-    <Text> Hello this is my Dog </Text>
+    <View style={{
+      flex: 1, 
+      justifyContent: 'center',
+      alignItems: 'center' 
+      }}>
+      <Image source={pic}
+        style={{ width: 200, height: 200 }}
+      />
+      <Text>Hello, here is my dog</Text>
     </View>
   );
 }
-
-
